@@ -139,42 +139,88 @@ body {
   width: 2.6em;
   display: block;
   margin-left: 2em;
- 
 }
 .center-icons2 {
   width: 2.4em;
   display: block;
   padding-top: 2px;
-  
 }
-@media (min-width: 1400px){
-.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-     max-width: 600px; 
-}
-}
-@media (max-width: 1400px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-       max-width: 600px; 
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 600px;
   }
+}
+@media (max-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 600px;
   }
+}
 
-  
-@media (min-width: 1400px){
-  .container1, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-       max-width: 1000px; 
-       padding-left: 100px
+@media (min-width: 1400px) {
+  .container1,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1000px;
+    padding-left: 100px;
   }
+}
+@media (min-width: 1400px) {
+  .container1,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1000px;
+    padding-left: 100px;
   }
-  @media (max-width: 1400px){
-    .container1, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-         max-width: 1000px; 
-         padding-left: 100px
-    }
-    }
-  @media (min-width: 1400px){
-    .container2, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-         max-width: 1300px;
-         margin: auto; 
-         
-    }
-    }
+}
+@media (max-width: 1400px) {
+  .container1,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1000px;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 1000px) {
+  .container2,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1300px;
+    margin: auto;
+  }
+}
+.icon-size {
+  width: 60px;
+}
+.icon-size1 {
+  width: 47px;
+}
+.icons-large {
+  width: 30px;
+}
+@media (min-width: 1400px) {
+  .icon-large-align {
+    padding-left: 50px;
+  }
+}
