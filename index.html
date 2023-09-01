@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function openDialog() {
+        var dialog = document.getElementById("dialog");
+        dialog.showModal();
+        centerDialog(dialog);
+      }
+
+      function closeDialog() {
+        var dialog = document.getElementById("dialog");
+        dialog.close();
+      }
+
+      function centerDialog(dialog) {
+        // Calculate the top and left position to center the dialog
+        var dialogWidth = dialog.offsetWidth;
+        var dialogHeight = dialog.offsetHeight;
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+        var top = (screenHeight - dialogHeight) / 2;
+        var left = (screenWidth - dialogWidth) / 2;
+
+        // Set the top and left position of the dialog
+        dialog.style.top = top + "px";
+        dialog.style.left = left + "px";
+      }
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Max Bulanovich</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.png"
+              alt="Richard hanrick"
+              width="80"
+            />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Maxim Bulanovich</h1>
+
+            <p class="title">Mobile App Developer</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >chewbacca.dvlp@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">August 19, 2005</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Prague, Czech Republic</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/chwbcc_max/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Hello, I'm Max. I develop commercial mobile applications for
+              Android and IOS. My main tool is Flutter. I love experimenting,
+              using modern technologies and learning new things.
+            </p>
+
+            <p>
+              I mostly write private projects, but if you want to see my public
+              projects, visit my
+              <a
+                href="https://github.com/Chewbacca-14"
+                target="_blank"
+                style="display: inline"
+              >
+                <mark class="blue">GitHub page.</mark>
+              </a>
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm using</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/flutter.png
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Flutter</h4>
+
+                  <p class="service-item-text">
+                    Flutter is an open source framework developed and supported
+                    by Google.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/dart.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Dart</h4>
+
+                  <p class="service-item-text">
+                    Dart is a client-optimized language for developing fast apps
+                    on any platform.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/html.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">HTML</h4>
+
+                  <p class="service-item-text">
+                    HTML is a programming language used to describe the
+                    structure of web pages.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/css.png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">CSS</h4>
+
+                  <p class="service-item-text">
+                    CSS is the language for describing the presentation of Web
+                    pages, including colors, layout, and fonts.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/bootstrap.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Bootstrap</h4>
+
+                  <p class="service-item-text">
+                    Bootstrap is a free, open source front-end development
+                    framework for the creation of websites and web apps.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/appwrite.png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Appwrite</h4>
+
+                  <p class="service-item-text">
+                    Appwrite is a new open-source, end-to-end, back end server
+                    for front-end and mobile developers.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/vscode.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">VS Code</h4>
+
+                  <p class="service-item-text">
+                    Visual Studio Code is a lightweight but powerful source code
+                    editor.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/git.png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Git</h4>
+
+                  <p class="service-item-text">
+                    Git is a version control system used for tracking changes in
+                    computer files.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/github.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">GitHub</h4>
+
+                  <p class="service-item-text">
+                    GitHub is a code hosting platform for version control and
+                    collaboration.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/firebase.png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Firebase</h4>
+
+                  <p class="service-item-text">
+                    Google Firebase is a set of cloud-based development tools
+                    that helps mobile app developers build, deploy and scale
+                    their apps.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/gpt.png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">ChatGPT</h4>
+
+                  <p class="service-item-text">
+                    ChatGPT is a natural language processing tool driven by AI
+                    technology that allows you to have human-like conversations
+                    and much more with the chatbot.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <div class="filter-select-box">
+              <button class="" data-select></button>
+            </div>
+
+            <ul class="project-list">
+              <li
+                  class="project-item active"
+                  data-filter-item
+                  data-category="web development"
+                >
+                  <a href="#">
+                    <figure class="project-img">
+                      <div class="project-item-icon-box">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </div>
+
+                      <img
+                        src="./assets/images/BM.png"
+                        alt="finance"
+                        loading="lazy"
+                        onclick="showOverlay(this)"
+                      />
+                    </figure>
+<br>
+                    <h3 class="project-title" style="text-align: center">
+                      Budget Manager
+                    </h3>
+
+                    <p
+                      class="project-category"
+                      style="max-width: 100%; text-align: center"
+                    >
+                      Finance tracker app. It has a fairly simple functionality
+                      with different graphics and transaction history. Has
+                      localization in 3 languages..
+                    </p>
+                    <br />
+
+                 
+                  </a>
+                </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/valweb.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                    <br />
+                  </figure>
+                  <h3 class="project-title" style="text-align: center">
+                    ValUniversity
+                  </h3>
+                  <p
+                    class="project-category"
+                    style="max-width: 100%; text-align: center"
+                  >
+                    An application with a fairly large information base about
+                    the Valorant game. Has information about weapons, agents and
+                    a list of skins. Has localization in 3 languages.
+                  </p>
+
+                  <br />
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/taxigo.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                    <br />
+                  </figure>
+                  <h3 class="project-title" style="text-align: center">
+                    Taxi App
+                  </h3>
+                  <p
+                    class="project-category"
+                    style="max-width: 100%; text-align: center"
+                  >
+                  Commercial application for ordering a taxi. I worked on screen layout and logic. At the request of the client, the real name and logo are hidden.
+                  </p>
+
+                  <br />
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/.png"
+                      alt="Kami"
+                      loading="lazy"
+                    />
+                    <br />
+                  </figure>
+                  <h3 class="project-title" style="text-align: center">
+                    Kami
+                  </h3>
+                  <p
+                    class="project-category"
+                    style="max-width: 100%; text-align: center"
+                  >
+                  Commercial application. Under Development.
+                  </p>
+
+                  <br />
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/o.png"
+                      alt="Horizon Village"
+                      loading="lazy"
+                    />
+                    <br />
+                  </figure>
+                  <h3 class="project-title" style="text-align: center">
+                    Horizon Village
+                  </h3>
+                  <p
+                    class="project-category"
+                    style="max-width: 100%; text-align: center"
+                  >
+                  Commercial application. Under Development.
+                  </p>
+
+                  <br />
+                </a>
+              </li>
+
+              
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?q=Prague,+Чехия&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <a
+              href="https://discord.com/users/940324961044811806"
+              class="h4 service-item-title"
+              >Discord: chwbcc_max</a
+            >
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
