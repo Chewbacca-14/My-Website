@@ -3,9 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project</title>
+        <title>EasyPGP Project</title>
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <header>
@@ -15,22 +15,22 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                    <img src="./img/social/discord.png" alt="discord">
+                                    <img src="/img/social/discord.svg" alt="discord">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="./img/social/instagram.png" alt="instagram">
+                                    <img src="/img/social/instagram.svg" alt="instagram">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="./img/social/telegram.png" alt="telegram">
+                                    <img src="/img/social/telegram.svg" alt="telegram">
                                 </a>
                             </li>
                             <li>
                                 <a href="#">
-                                    <img src="./img/social/gmail.png" alt="gmail">
+                                    <img src="/img/social/mail.svg" alt="gmail">
                                 </a>
                             </li>
                         </ul>
@@ -38,128 +38,130 @@
                     <nav class="header__navigation">
                         <ul class="navigation">
                             <li class="navigation__item">
-                                <a href="#intro" class="link">Home</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a href="#skills" class="link">About</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a href="#projects" class="link">Projects</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a href="#footer" class="link">Contact</a>
+                                <a href="/index.html" class="link">Back</a>
                             </li>
                         </ul>
                     </nav>
-                    <button class="burger">
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </header>
-        <main>
-            <section class="app">
-                <div class="container">
-                    <div class="app__inner">
-                        <div class="app__info">
-                            <div>
-                                <span class="app__suptitle">Commercial App</span>
-                                <h1 class="h1 app__title">EasyPGP</h1>
-                            </div>
-                        </div>
-                        <div class="app__photos">
-                            <img src="./img/projects/project.png" alt="project">
-                            <img src="./img/projects/project.png" alt="project">
-                        </div>
+                </ul>
+            </nav>
+            <button class="burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="app">
+        <div class="container">
+            <div class="app__inner">
+                <div class="app__info">
+                    <div>
+                        <span class="app__suptitle">Commercial App</span>
+                        <h1 class="h1 app__title">EasyPGP</h1>
                     </div>
                 </div>
-            </section>
-            <div class="button-text project-description container">
-                <p>
-                    Android & IOS
-                </p>
-                <p>
-                    The application allows decrypting messages that were encrypted using PGP encryption. All you need is the password and the PGP private key from the key pair used to encrypt the message. Messages can be decrypted in two ways: by pasting the encrypted message or by scanning the QR code containing the encrypted message.
-                </p>
-                <p>
-                    If you don't have PGP keys, you can generate them directly in the application, choosing from three key lengths: 2048 bits, 4096 bits, and 8192 bits. After gener
+                <div class="app__photos">
+                    <img src="/phone_mockups/easypgp/easypgp1.png" alt="project">
+                    <img src="/phone_mockups/easypgp/easypgp3.png" alt="project">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="button-text project-description container">
+        <p>
+            Android & IOS
+        </p>
+        <p>
+            The application allows decrypting messages that were encrypted using PGP encryption. All you need is the password and the PGP private key from the key pair used to encrypt the message. Messages can be decrypted in two ways: by pasting the encrypted message or by scanning the QR code containing the encrypted message.
+        </p>
+        <p>
+            If you don't have PGP keys, you can generate them directly in the application, choosing from three key lengths: 2048 bits, 4096 bits, and 8192 bits. After gener
                     ating the keys, they will be stored in a secure storage on your phone. And if you already have your key pair, you can upload them to the application. 
                     The application also offers you the option to secure access using a password, fingerprint, or Face ID.
-                </p>
+        </p>
+    </div>
+    <section>
+        <div class="container">
+            <div class="desc__inner">
+                <div>
+                    <h2 class="h2 section-title">Main Technologies</h2>
+                    <ul>
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Secure Storage</li>
+                        <li>OpenPGP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="h2 section-title">What I Did</h2>
+                    <ul>
+                        <li>I was responsible for the UI/UX design (codding) of the entire application, developing the logic for generating and storing PGP keys, creating methods to secure the application using password, Face ID, or fingerprint, fixing bugs, and publishing the application on Google Play.</li>
+                    </ul>
+                </div>
             </div>
-            <section>
-                <div class="container">
-                    <div class="desc__inner">
-                        <div>
-                            <h2 class="h2 section-title">Main Technologies</h2>
-                            <ul>
-                                <li>Flutter</li>
-                                <li>Dart</li>
-                                <li>Secure Storage</li>
-                                <li>OpenPGP</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="h2 section-title">What I Did</h2>
-                            <ul>
-                                <li>I was responsible for the UI/UX design (codding) of the entire application, developing the logic for generating and storing PGP keys, creating methods to secure the application using password, Face ID, or fingerprint, fixing bugs, and publishing the application on Google Play.</li>
-                            </ul>
-                        </div>
-                    </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="h2 section-title">Photos</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="/phone_mockups/easypgp/easypgp1.png" alt="photo">
                 </div>
-            </section>
-            <section id="projects">
-                <div class="container">
-                    <h2 class="h2 section-title">Photos</h2>
-                    <div class="projects">
-                        <div class="project">
-                            <img src="./img/projects/project.png" alt="photo">
-                        </div>
-                        <div class="project">
-                            <img src="./img/projects/project.png" alt="photo">
-                        </div>
-                        <div class="project">
-                            <img src="./img/projects/project.png" alt="photo">
-                        </div>
-                        <div class="project">
-                            <img src="./img/projects/project.png" alt="photo">
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer id="footer">
-                <div class="container">
-                    <div class="footer__inner">
-                        <span>Contact Me</span>
-                        <div class="social">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="./img/social/discord.png" alt="discord">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./img/social/instagram.png" alt="instagram">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./img/social/telegram.png" alt="telegram">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./img/social/gmail.png" alt="gmail">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="project">
+                    <img src="/phone_mockups/easypgp/easypgp2.png" alt="photo">
                 </div>
-            </footer>
-            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-            <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-            <script src="./js/script.js"></script>
-        </body>
-    </html>
+                <div class="project">
+                    <img src="/phone_mockups/easypgp/easypgp3.png" alt="photo">
+                </div>
+                <div class="project">
+                    <img src="/phone_mockups/easypgp/easypgp4.png" alt="photo">
+                </div>
+                <div class="project">
+                    <img src="/phone_mockups/easypgp/easypgp5.png" alt="photo">
+                </div>
+                <div class="project">
+                    <img src="/phone_mockups/easypgp/easypgp6.png" alt="photo">
+                </div>
+                <div class="project">
+                    <img src="/phone_mockups/easypgp/easypgp7.png" alt="photo">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <span>Contact Me</span>
+                <div class="social">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="/img/social/discord.svg" alt="discord">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/img/social/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/img/social/telegram.svg" alt="telegram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/img/social/mail.svg" alt="gmail">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="   /js/script.js"></script>
+</body>
+</html>
