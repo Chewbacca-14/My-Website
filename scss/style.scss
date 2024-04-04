@@ -22,6 +22,14 @@ header {
   }
 }
 
+figure {
+  flex-basis: 50%;
+
+  &:last-child {
+    margin-top: 48px;
+  }
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;

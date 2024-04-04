@@ -794,6 +794,8 @@ footer {
   background: linear-gradient(180deg, rgb(27, 27, 27) 0%, rgb(0, 0, 0) 100%);
 }
 
+
+
 .footer__inner {
   display: flex;
   justify-content: center;
@@ -889,6 +891,15 @@ footer {
   gap: 16px;
   padding-bottom: 48px;
   flex-basis: 50%;
+}
+
+
+.app__photos figure {
+  flex-basis: 50%;
+}
+
+.app__photos figure:last-child {
+  margin-top: 48px;
 }
 
 @media (max-width: 1440px) {
